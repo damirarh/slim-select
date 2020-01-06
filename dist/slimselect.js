@@ -1528,6 +1528,9 @@ var Slim = (function () {
         input.placeholder = this.main.config.searchPlaceholder;
         input.tabIndex = 0;
         input.setAttribute('aria-label', this.main.config.searchPlaceholder);
+        input.setAttribute('autocapitalize', 'off');
+        input.setAttribute('autocomplete', 'off');
+        input.setAttribute('autocorrect', 'off');
         input.onclick = function (e) {
             setTimeout(function () {
                 var target = e.target;
